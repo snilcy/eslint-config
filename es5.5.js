@@ -1,5 +1,5 @@
 module.exports = {
-    extends: [`htmlacademy/es5`],
+    extends: [`snilcy/es5`],
     rules: {
       'arrow-parens': [`error`, `always`],
       'constructor-super': `error`, // eslint:recommended

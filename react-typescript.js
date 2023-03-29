@@ -1,6 +1,6 @@
 module.exports = {
   extends: [
-    'htmlacademy/react',    
+    'snilcy/react',    
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking'
   ],

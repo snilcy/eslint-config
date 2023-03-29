@@ -1,5 +1,5 @@
 module.exports = {
-    extends: [`htmlacademy/es5`],
+    extends: [`snilcy/es5`],
     rules: {
       // ECMAScript 6
       // http://eslint.org/docs/rules/#ecmascript-6

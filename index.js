@@ -1,11 +1,11 @@
 module.exports = {
     depends: [
-        'htmlacademy/es5',
-        'htmlacademy/es5.5',
-        'htmlacademy/es6',
-        'htmlacademy/node',
-        'htmlacademy/vanilla',
-        'htmlacademy/react',
-        'htmlacademy/react-typescript',
+        'snilcy/es5',
+        'snilcy/es5.5',
+        'snilcy/es6',
+        'snilcy/node',
+        'snilcy/vanilla',
+        'snilcy/react',
+        'snilcy/react-typescript',
     ]
 };

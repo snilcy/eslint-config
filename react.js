@@ -1,5 +1,5 @@
 module.exports = {
-    extends: ['htmlacademy/vanilla', 'plugin:react/recommended'],
+    extends: ['snilcy/vanilla', 'plugin:react/recommended'],
     rules: {
         'react/no-array-index-key': 'error',
         'react/no-access-state-in-setstate': 'error',

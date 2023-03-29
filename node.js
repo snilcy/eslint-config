@@ -1,6 +1,6 @@
 module.exports = {
     extends: [
-      'htmlacademy/vanilla',
+      'snilcy/vanilla',
       'plugin:@typescript-eslint/recommended',
       'plugin:node/recommended',
     ],
