@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-snilcy",
-  "version": "1.9.0",
+  "version": "1.9.1",
   "description": "ESLint shareable config",
   "files": [
     "es5.js",

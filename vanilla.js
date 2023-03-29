@@ -42,7 +42,7 @@ module.exports = {
     'no-multiple-empty-lines': 'error',
     'no-trailing-spaces': 'error',
     'quotes': ['error', 'single'],
-    'semi': 'error',
+    'semi': ['error', 'never'],
     'semi-style': 'error',
     'space-infix-ops': 'error',
     'brace-style': ['error'],
