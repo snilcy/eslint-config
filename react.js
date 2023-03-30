@@ -1,5 +1,5 @@
 module.exports = {
-    extends: ['snilcy/vanilla', 'plugin:react/recommended'],
+    extends: ['@snilcy/eslint-config/vanilla', 'plugin:react/recommended'],
     rules: {
         'react/no-array-index-key': 'error',
         'react/no-access-state-in-setstate': 'error',

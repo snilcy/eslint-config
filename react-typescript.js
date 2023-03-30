@@ -1,6 +1,6 @@
 module.exports = {
   extends: [
-    'snilcy/react',    
+    '@snilcy/eslint-config/react',    
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking'
   ],

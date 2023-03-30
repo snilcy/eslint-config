@@ -1,11 +1,11 @@
 module.exports = {
     depends: [
-        'snilcy/es5',
-        'snilcy/es5.5',
-        'snilcy/es6',
-        'snilcy/node',
-        'snilcy/vanilla',
-        'snilcy/react',
-        'snilcy/react-typescript',
+        '@snilcy/eslint-config/es5',
+        '@snilcy/eslint-config/es5.5',
+        '@snilcy/eslint-config/es6',
+        '@snilcy/eslint-config/node',
+        '@snilcy/eslint-config/vanilla',
+        '@snilcy/eslint-config/react',
+        '@snilcy/eslint-config/react-typescript',
     ]
 };

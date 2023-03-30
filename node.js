@@ -1,6 +1,6 @@
 module.exports = {
     extends: [
-      'snilcy/vanilla',
+      '@snilcy/eslint-config/vanilla',
       'plugin:@typescript-eslint/recommended',
       'plugin:node/recommended',
     ],
