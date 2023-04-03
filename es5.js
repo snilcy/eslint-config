@@ -118,7 +118,7 @@ module.exports = {
     // 'computed-property-spacing': 'error',
     'eol-last': 'error',
     'func-call-spacing': 'error',
-    'key-spacing': 'error',
+    // 'key-spacing': 'error',
     'keyword-spacing': 'error',
     'linebreak-style': 'off', // check this in git
     'new-cap': 'error',
