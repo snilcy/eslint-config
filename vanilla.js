@@ -46,6 +46,17 @@ module.exports = {
     'semi-style': 'error',
     'space-infix-ops': 'error',
     'brace-style': ['error'],
-    'space-in-parens': ['error']
+    'space-in-parens': ['error'],
+
+    // extends
+    'object-curly-spacing': ['error', 'always', {
+      'objectsInObjects': false
+    }],
+    'array-bracket-spacing': ['error', 'always', {
+      'arraysInArrays': false,
+      'objectsInArrays': false,
+      'singleValue': false
+    }],
+    'computed-property-spacing': ['error', 'never']
   },
 };
