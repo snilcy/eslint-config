@@ -57,6 +57,7 @@ module.exports = {
       'objectsInArrays': false,
       'singleValue': false
     }],
-    'computed-property-spacing': ['error', 'never']
+    'computed-property-spacing': ['error', 'never'],
+    'comma-dangle': ['error', 'always-multiline'],
   },
 };

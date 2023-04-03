@@ -112,7 +112,7 @@ module.exports = {
     // 'array-bracket-spacing': ['error', 'never'],
     'brace-style': 'error',
     'camelcase': 'error',
-    'comma-dangle': ['error', 'only-multiline'],
+    // 'comma-dangle': ['error', 'only-multiline'],
     'comma-spacing': 'error',
     'comma-style': 'error',
     // 'computed-property-spacing': 'error',
