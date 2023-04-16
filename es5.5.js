@@ -1,5 +1,5 @@
 module.exports = {
-    extends: [`@snilcy/eslint-config/es5`],
+    extends: ['@snilcy/eslint-config/es5'],
     rules: {
       'arrow-parens': [`error`, `always`],
       'constructor-super': `error`, // eslint:recommended

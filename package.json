@@ -1,6 +1,6 @@
 {
   "name": "@snilcy/eslint-config",
-  "version": "2.4.0",
+  "version": "2.6.0",
   "description": "ESLint shareable config",
   "files": [
     "es5.js",
@@ -8,6 +8,7 @@
     "es6.js",
     "node.js",
     "vanilla.js",
+    "prettier.js",
     "react.js",
     "react-typescript.js",
     "index.js"
@@ -27,7 +28,10 @@
     "eslint": ">=7"
   },
   "devDependencies": {
-    "eslint": "^7.32.0"
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "2.8.7"
   },
   "dependencies": {
     "eslint-plugin-node": "^11.1.0",
