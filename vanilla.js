@@ -7,7 +7,7 @@ module.exports = {
     // https://eslint.org/docs/rules/#possible-errors
     // ---------------------------------------------
     'no-template-curly-in-string': 'error',
-    'no-use-before-define'       : [
+    'no-use-before-define': [
       'error',
       {
         functions: false,
@@ -16,36 +16,36 @@ module.exports = {
     // Suggestions
     // https://eslint.org/docs/rules/#suggestions
     // ---------------------------------------------
-    'accessor-pairs'   : 'error',
-    'arrow-body-style' : ['error', 'as-needed'],
+    'accessor-pairs': 'error',
+    'arrow-body-style': ['error', 'as-needed'],
     camelcase          : 'error',
     curly              : 'error',
     eqeqeq             : ['error', 'always'],
-    'no-alert'         : 'error',
-    'no-console'       : 'error',
+    'no-alert': 'error',
+    'no-console': 'error',
     'no-nested-ternary': 'error',
-    'no-return-assign' : 'error',
-    'no-shadow'        : [
+    'no-return-assign': 'error',
+    'no-shadow': [
       'error',
       {
         hoist: 'all',
       },
     ],
-    'no-unneeded-ternary'  : 'error',
+    'no-unneeded-ternary': 'error',
     'no-unused-expressions': 'error',
-    'no-useless-concat'    : 'error',
-    'no-useless-return'    : 'error',
-    'no-var'               : 'error',
+    'no-useless-concat': 'error',
+    'no-useless-return': 'error',
+    'no-var': 'error',
     'prefer-arrow-callback': 'error',
-    'prefer-const'         : 'error',
-    'prefer-template'      : 'error',
+    'prefer-const': 'error',
+    'prefer-template': 'error',
     radix                  : 'error',
     strict                 : ['error', 'global'],
     // Layout & Formatting
     // https://eslint.org/docs/rules/#layout-formatting
     // ---------------------------------------------
-    'arrow-parens'         : 'error',
-    'eol-last'             : 'error',
+    'arrow-parens': 'error',
+    'eol-last': 'error',
     indent                 : [
       'error',
       2,
@@ -60,15 +60,15 @@ module.exports = {
         exceptAfterSingleLine: true,
       },
     ],
-    'no-multi-spaces'        : 'error',
+    'no-multi-spaces': 'error',
     'no-multiple-empty-lines': 'error',
-    'no-trailing-spaces'     : 'error',
+    'no-trailing-spaces': 'error',
     quotes                   : ['error', 'single'],
     semi                     : ['error', 'never'],
-    'semi-style'             : 'error',
-    'space-infix-ops'        : 'error',
-    'brace-style'            : ['error'],
-    'space-in-parens'        : ['error'],
+    'semi-style': 'error',
+    'space-infix-ops': 'error',
+    'brace-style': ['error'],
+    'space-in-parens': ['error'],
 
     // extends
     'object-curly-spacing': [
@@ -88,8 +88,8 @@ module.exports = {
       },
     ],
     'computed-property-spacing': ['error', 'never'],
-    'comma-dangle'             : ['error', 'always-multiline'],
-    'key-spacing'              : [
+    'comma-dangle': ['error', 'always-multiline'],
+    'key-spacing': [
       'error',
       {
         beforeColon: false,

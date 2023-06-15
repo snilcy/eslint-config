@@ -1,8 +1,8 @@
 /* eslint-disable strict */
 module.exports = {
-  extends: ['plugin:prettier/recommended', 'prettier'],
+  extends: ['prettier'],
   plugins: ['prettier'],
   rules  : {
-    'prettier/prettier': 'error',
+    'prettier/prettier': 0,
   },
 }
