@@ -2,18 +2,11 @@
   "name": "@snilcy/eslint-config",
   "version": "2.7.0",
   "description": "ESLint shareable config",
-  "files": [
-    "es5.js",
-    "es5.5.js",
-    "es6.js",
-    "node.js",
-    "vanilla.js",
-    "prettier.js",
-    "react.js",
-    "react-typescript.js",
-    "index.js"
-  ],
   "keywords": [],
+  "exports": {
+    ".": "./index.js",
+    "./typescript": "./typescript.js"
+  },
   "scripts": {
     "test": "eslint test/",
     "deploy": "npm run test && npm publish --access public"
@@ -25,21 +18,16 @@
   "license": "MIT",
   "homepage": "https://github.com/0snilcy/eslint-config#readme",
   "peerDependencies": {
-    "eslint": ">=7"
+    "eslint": ">=8",
+    "@typescript-eslint/eslint-plugin": "^6.12.0",
+    "@typescript-eslint/parser": "^6.12.0",
+    "@stylistic/eslint-plugin": "^1.4.1"
   },
   "devDependencies": {
-    "eslint-plugin-prettier": "^4.2.1"
-  },
-  "dependencies": {
-    "eslint": ">=7",
-    "eslint-config-prettier": "^8.8.0",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-react": "^7.32.2",
-    "prettier": "2.8.7"
-  },
-  "eslintConfig": {
-    "env": {
-      "node": true
-    }
+    "@stylistic/eslint-plugin": "^1.4.1",
+    "eslint": "^8.54.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "prettier": "^3.1.0"
   }
 }

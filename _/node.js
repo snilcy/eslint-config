@@ -31,7 +31,7 @@ module.exports = {
     // ------------------------------------------
     'node/callback-return'                      : 'error',
     'node/exports-style'                        : 'off',
-    'node/file-extension-in-import'             : ['error', 'always'],
+    'node/file-extension-in-import'             : 'off',
     'node/global-require'                       : 'error',
     'node/no-mixed-requires'                    : 'error',
     'node/no-process-env'                       : 'off',
