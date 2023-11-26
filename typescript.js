@@ -1,18 +1,40 @@
 module.exports = {
-  extends: ['./index.js'],
-  parser : '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint', '@stylistic/ts'],
-  rules  : {
-    'no-use-before-define'              : 'warn',
-    'no-shadow'                         : 'off',
-    'no-unused-vars'                    : 'off',
+  extends: [
+    'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/stylistic',
+    './index.js',
+  ],
+  parser: '@typescript-eslint/parser',
+  plugins: [
+    '@typescript-eslint',
+    '@stylistic/ts',
+
+    // 'plugin:@typescript-eslint/recommended',
+    // 'plugin:@stylistic/disable-legacy',
+  ],
+  rules: {
+    '@stylistic/key-spacing': 'off',
     '@stylistic/type-annotation-spacing': [
-      'off',
+      'warn',
       {
+        after: true,
         before: false,
-        after : true,
       },
     ],
+
+    '@typescript-eslint/key-spacing': [
+      'warn',
+      {
+        afterColon: true,
+        beforeColon: false,
+      },
+    ],
+
+    '@typescript-eslint/type-annotation-spacing': 'off',
+
+    'no-shadow': 'off',
+    'no-unused-vars': 'off',
+    'no-use-before-define': 'warn',
 
     // '@typescript-eslint/no-use-before-define': 'error',
     // '@typescript-eslint/no-shadow': 'error',
