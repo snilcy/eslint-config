@@ -1,32 +1,28 @@
 module.exports = {
   ignorePatterns: ['node_modules/*', 'build/*'],
-  extends       : [
-    'plugin:@stylistic/recommended-extends',
-    // 'prettier'
-  ],
-  plugins: [
-    '@stylistic',
-    'modules-newlines',
-    // 'prettier',
-  ],
-  parserOptions: {
+  extends       : ['plugin:@stylistic/recommended-extends'],
+  plugins       : ['@stylistic', 'modules-newlines'],
+  parserOptions : {
     sourceType : 'module',
     ecmaVersion: 'latest',
   },
   rules: {
+    'no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
+
     '@stylistic/operator-linebreak': 'off',
-    '@stylistic/arrow-parens'      : ['error', 'always'],
+    '@stylistic/arrow-parens'      : ['warn', 'always'],
     '@stylistic/quotes'            : [
-      'error',
+      'warn',
       'single',
       {
         avoidEscape          : true,
         allowTemplateLiterals: true,
       },
     ],
-    '@stylistic/no-multi-spaces': 'off',
-    '@stylistic/key-spacing'    : [
-      'error',
+    '@stylistic/no-multi-spaces'        : 'off',
+    '@stylistic/no-multiple-empty-lines': ['warn', { max: 1 }],
+    '@stylistic/key-spacing'            : [
+      'warn',
       {
         multiLine: {
           beforeColon: false,
@@ -40,22 +36,39 @@ module.exports = {
         },
       },
     ],
-    '@stylistic/object-curly-newline': ['error', {
-      ObjectExpression : { multiline: true },
-      ObjectPattern    : { multiline: true },
-      ImportDeclaration: {
-        multiline    : true,
-        minProperties: 3,
+    '@stylistic/array-element-newline': [
+      'warn',
+      {
+        minItems : 3,
+        multiline: true,
       },
-      ExportDeclaration: {
-        multiline    : true,
-        minProperties: 3,
+    ],
+    '@stylistic/array-bracket-newline': [
+      'warn',
+      {
+        minItems : 3,
+        multiline: true,
       },
-    }],
-    '@stylistic/object-property-newline': ['error', { allowAllPropertiesOnSameLine: false }],
+    ],
+    '@stylistic/object-curly-newline': [
+      'warn',
+      {
+        ObjectExpression : { multiline: true },
+        ObjectPattern    : { multiline: true },
+        ImportDeclaration: {
+          multiline    : true,
+          minProperties: 3,
+        },
+        ExportDeclaration: {
+          multiline    : true,
+          minProperties: 3,
+        },
+      },
+    ],
+    '@stylistic/object-property-newline': ['warn', { allowAllPropertiesOnSameLine: false }],
 
-    'modules-newlines/import-declaration-newline': 'error',
-    'modules-newlines/export-declaration-newline': 'error',
+    'modules-newlines/import-declaration-newline': 'warn',
+    'modules-newlines/export-declaration-newline': 'warn',
 
     // 'prettier/prettier': [
     //   'error',
