@@ -8,7 +8,6 @@ module.exports = {
   plugins: [
     '@typescript-eslint',
     '@stylistic/ts',
-
     // 'plugin:@typescript-eslint/recommended',
     // 'plugin:@stylistic/disable-legacy',
   ],
@@ -29,7 +28,86 @@ module.exports = {
         beforeColon: false,
       },
     ],
-
+    '@typescript-eslint/naming-convention': [
+      'error',
+      {
+        format: ['camelCase'],
+        selector: 'default',
+      },
+      {
+        format: ['UPPER_CASE'],
+        selector: 'enumMember',
+      },
+      {
+        format: ['camelCase'],
+        leadingUnderscore: 'allow',
+        selector: 'parameter',
+      },
+      // {
+      //   format: ['camelCase'],
+      //   leadingUnderscore: 'require',
+      //   modifiers: ['private'],
+      //   selector: 'memberLike',
+      // },
+      {
+        format: ['PascalCase'],
+        selector: 'typeLike',
+      },
+      {
+        format: ['StrictPascalCase'],
+        prefix: ['I'],
+        selector: [
+          'interface',
+          'typeAlias',
+        ],
+      },
+      {
+        format: [
+          'camelCase',
+          'UPPER_CASE',
+        ],
+        selector: 'variable',
+      },
+      {
+        format: [
+          'UPPER_CASE',
+          'camelCase',
+          'StrictPascalCase',
+        ],
+        modifiers: ['const'],
+        selector: 'variable',
+      },
+      {
+        format: [
+          'camelCase',
+          'PascalCase',
+        ],
+        selector: 'import',
+      },
+      {
+        format: null,
+        modifiers: ['requiresQuotes'],
+        selector: [
+          'classProperty',
+          'objectLiteralProperty',
+          'typeProperty',
+          'classMethod',
+          'objectLiteralMethod',
+          'typeMethod',
+          'accessor',
+          'enumMember',
+        ],
+      },
+      {
+        format: [
+          'UPPER_CASE',
+          'camelCase',
+        ],
+        selector: 'objectLiteralProperty',
+      },
+    ],
+    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/no-unused-vars': 'off',
     '@typescript-eslint/type-annotation-spacing': 'off',
 
     'no-shadow': 'off',

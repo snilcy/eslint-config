@@ -21,10 +21,7 @@ module.exports = {
   rules: {
     '@stylistic/array-bracket-newline': [
       'warn',
-      {
-        minItems: 2,
-        multiline: true,
-      },
+      'consistent',
     ],
 
     '@stylistic/array-element-newline': [
@@ -105,6 +102,30 @@ module.exports = {
       { argsIgnorePattern: '^_' },
     ],
 
+    'perfectionist/sort-classes': [
+      'error',
+      {
+        groups: [
+          'index-signature',
+          'static-property',
+          'private-property',
+          'property',
+          'constructor',
+          'static-method',
+          'private-method',
+          'static-private-method',
+          'method',
+          [
+            'get-method',
+            'set-method',
+          ],
+          'unknown',
+        ],
+        order: 'asc',
+        type: 'natural',
+      },
+    ],
+
     'perfectionist/sort-interfaces': [
       'warn',
       {
@@ -123,5 +144,7 @@ module.exports = {
     ],
 
     'unicorn/no-array-reduce': 'off',
+    'unicorn/no-null': 'off',
+    'unicorn/prefer-module': 'off',
   },
 }
