@@ -102,6 +102,7 @@ module.exports = {
         format: [
           'UPPER_CASE',
           'camelCase',
+          'StrictPascalCase',
         ],
         selector: 'objectLiteralProperty',
       },

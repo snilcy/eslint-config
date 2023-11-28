@@ -111,18 +111,18 @@ module.exports = {
           'private-property',
           'property',
           'constructor',
-          'static-method',
-          'private-method',
-          'static-private-method',
-          'method',
           [
             'get-method',
             'set-method',
           ],
+          'static-method',
+          'private-method',
+          'static-private-method',
+          'method',
           'unknown',
         ],
         order: 'asc',
-        type: 'natural',
+        type: 'alphabetical',
       },
     ],
 
@@ -131,20 +131,79 @@ module.exports = {
       {
         'order': 'asc',
         'partition-by-new-line': true,
-        'type': 'natural',
+        'type': 'alphabetical',
       },
     ],
 
     'perfectionist/sort-objects': [
       'warn',
       {
-        order: 'asc',
-        type: 'natural',
+        'order': 'asc',
+        'partition-by-new-line': true,
+        'type': 'alphabetical',
       },
     ],
+
+    'perfectionist/sort-exports': [
+      'error',
+      {
+        order: 'asc',
+        type: 'alphabetical',
+      },
+    ],
+    'perfectionist/sort-imports': [
+      'warn',
+      {
+
+        'groups': [
+          'type',
+          'builtin',
+          'external',
+          'internal',
+          'index-type',
+          'parent',
+          'sibling',
+          'index',
+          'object',
+
+          'styles',
+          'side-effect-style',
+
+          'external-type',
+          'internal-type',
+          'external-type',
+          'parent-type',
+          'sibling-type',
+          'index-type',
+
+          'unknown',
+        ],
+        'internal-pattern': [
+          'src/**',
+        ],
+        'newlines-between': 'always',
+        'order': 'asc',
+        'type': 'alphabetical',
+
+      },
+    ],
+    'sort-exports': 'off',
+    'sort-imports': 'off',
 
     'unicorn/no-array-reduce': 'off',
     'unicorn/no-null': 'off',
     'unicorn/prefer-module': 'off',
+    'unicorn/prevent-abbreviations': ['error',
+      {
+        allowList: {
+          args: true,
+          props: true,
+        },
+        checkFilenames: true,
+        checkProperties: true,
+        checkVariables: true,
+      }],
+
+    '@stylistic/lines-between-class-members': ['error'],
   },
 }
