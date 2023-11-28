@@ -18,6 +18,12 @@ module.exports = {
       {
         after: true,
         before: false,
+        overrides: {
+          arrow: {
+            after: true,
+            before: true,
+          },
+        },
       },
     ],
 
