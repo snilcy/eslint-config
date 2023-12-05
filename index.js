@@ -3,39 +3,25 @@ module.exports = {
     'plugin:@stylistic/recommended-extends',
     'plugin:perfectionist/recommended-alphabetical',
     'plugin:unicorn/recommended',
+    'plugin:prettier/recommended',
   ],
-  ignorePatterns: [
-    'node_modules/*',
-    'build/*',
-  ],
+  ignorePatterns: ['node_modules/*', 'build/*'],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: [
-    '@stylistic',
-    'modules-newlines',
-    'perfectionist',
-    'unicorn',
-  ],
+  plugins: ['@stylistic', 'modules-newlines', 'perfectionist', 'unicorn'],
   rules: {
-    '@stylistic/array-bracket-newline': [
-      'warn',
-      'consistent',
-    ],
-
+    '@stylistic/array-bracket-newline': ['off', 'consistent'],
     '@stylistic/array-element-newline': [
-      'warn',
+      'off',
       {
-        minItems: 2,
+        minItems: 3,
         multiline: true,
       },
     ],
 
-    '@stylistic/arrow-parens': [
-      'warn',
-      'always',
-    ],
+    '@stylistic/arrow-parens': ['off', 'always'],
     '@stylistic/key-spacing': [
       'warn',
       {
@@ -54,12 +40,9 @@ module.exports = {
         },
       },
     ],
-    '@stylistic/no-multiple-empty-lines': [
-      'warn',
-      { max: 1 },
-    ],
+    '@stylistic/no-multiple-empty-lines': ['warn', { max: 1 }],
     '@stylistic/object-curly-newline': [
-      'warn',
+      'off',
       {
         ExportDeclaration: {
           consistent: true,
@@ -82,44 +65,38 @@ module.exports = {
       },
     ],
     '@stylistic/object-property-newline': [
-      'warn',
+      'off',
       { allowAllPropertiesOnSameLine: false },
     ],
     '@stylistic/operator-linebreak': 'off',
     '@stylistic/quotes': [
-      'warn',
+      'off',
       'single',
       {
         allowTemplateLiterals: true,
         avoidEscape: true,
       },
     ],
-    'modules-newlines/export-declaration-newline': 'warn',
-    'modules-newlines/import-declaration-newline': 'warn',
+    'modules-newlines/export-declaration-newline': 'off',
+    'modules-newlines/import-declaration-newline': 'off',
 
-    'no-unused-vars': [
-      'warn',
-      { argsIgnorePattern: '^_' },
-    ],
+    'no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
 
     'perfectionist/sort-classes': [
       'error',
       {
         groups: [
           'index-signature',
-          'static-property',
           'private-property',
           'property',
           'constructor',
-          [
-            'get-method',
-            'set-method',
-          ],
+          ['get-method', 'set-method'],
           'static-method',
           'private-method',
-          'static-private-method',
           'method',
           'unknown',
+          'static-private-method',
+          'static-property',
         ],
         order: 'asc',
         type: 'alphabetical',
@@ -129,18 +106,18 @@ module.exports = {
     'perfectionist/sort-interfaces': [
       'warn',
       {
-        'order': 'asc',
+        order: 'asc',
         'partition-by-new-line': true,
-        'type': 'alphabetical',
+        type: 'alphabetical',
       },
     ],
 
     'perfectionist/sort-objects': [
       'warn',
       {
-        'order': 'asc',
+        order: 'asc',
         'partition-by-new-line': true,
-        'type': 'alphabetical',
+        type: 'alphabetical',
       },
     ],
 
@@ -154,8 +131,7 @@ module.exports = {
     'perfectionist/sort-imports': [
       'warn',
       {
-
-        'groups': [
+        groups: [
           'type',
           'builtin',
           'external',
@@ -178,22 +154,21 @@ module.exports = {
 
           'unknown',
         ],
-        'internal-pattern': [
-          'src/**',
-        ],
+        'internal-pattern': ['src/**'],
         'newlines-between': 'always',
-        'order': 'asc',
-        'type': 'alphabetical',
-
+        order: 'asc',
+        type: 'alphabetical',
       },
     ],
     'sort-exports': 'off',
     'sort-imports': 'off',
 
+    'unicorn/import-style': 'off',
     'unicorn/no-array-reduce': 'off',
     'unicorn/no-null': 'off',
     'unicorn/prefer-module': 'off',
-    'unicorn/prevent-abbreviations': ['error',
+    'unicorn/prevent-abbreviations': [
+      'error',
       {
         allowList: {
           args: true,
@@ -202,8 +177,22 @@ module.exports = {
         checkFilenames: true,
         checkProperties: true,
         checkVariables: true,
-      }],
+      },
+    ],
 
+    '@stylistic/brace-style': 'off',
+    '@stylistic/function-call-argument-newline': ['error', 'consistent'],
+    '@stylistic/indent': 'off',
     '@stylistic/lines-between-class-members': ['error'],
+    '@stylistic/quote-props': ['error', 'as-needed'],
+
+    'prettier/prettier': [
+      'error',
+      {
+        parser: 'flow',
+        semi: false,
+        singleQuote: true,
+      },
+    ],
   },
 }

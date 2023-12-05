@@ -27,6 +27,14 @@ module.exports = {
       },
     ],
 
+    '@typescript-eslint/ban-types': [
+      'error',
+      {
+        types: {
+          '{}': false,
+        },
+      },
+    ],
     '@typescript-eslint/key-spacing': [
       'warn',
       {
@@ -62,32 +70,19 @@ module.exports = {
       {
         format: ['StrictPascalCase'],
         prefix: ['I'],
-        selector: [
-          'interface',
-          'typeAlias',
-        ],
+        selector: ['interface', 'typeAlias'],
       },
       {
-        format: [
-          'camelCase',
-          'UPPER_CASE',
-        ],
+        format: ['camelCase', 'UPPER_CASE'],
         selector: 'variable',
       },
       {
-        format: [
-          'UPPER_CASE',
-          'camelCase',
-          'StrictPascalCase',
-        ],
+        format: ['UPPER_CASE', 'camelCase', 'StrictPascalCase'],
         modifiers: ['const'],
         selector: 'variable',
       },
       {
-        format: [
-          'camelCase',
-          'PascalCase',
-        ],
+        format: ['camelCase', 'PascalCase'],
         selector: 'import',
       },
       {
@@ -105,11 +100,7 @@ module.exports = {
         ],
       },
       {
-        format: [
-          'UPPER_CASE',
-          'camelCase',
-          'StrictPascalCase',
-        ],
+        format: ['UPPER_CASE', 'camelCase', 'StrictPascalCase'],
         selector: 'objectLiteralProperty',
       },
     ],
@@ -121,6 +112,15 @@ module.exports = {
     'no-unused-vars': 'off',
     'no-use-before-define': 'warn',
 
+    'prettier/prettier': [
+      'error',
+      {
+        parser: 'flow',
+        parser: 'typescript',
+        semi: false,
+        singleQuote: true,
+      },
+    ],
     // '@typescript-eslint/no-use-before-define': 'error',
     // '@typescript-eslint/no-shadow': 'error',
     // '@typescript-eslint/no-unused-vars': 'error',

@@ -9,7 +9,8 @@
   },
   "scripts": {
     "test": "eslint test/",
-    "deploy": "npm run test && npm publish --access public"
+    "deploy": "npm run test && npm publish --access public",
+    "lint": "eslint index.js typescript.js"
   },
   "repository": {
     "type": "git",
@@ -27,7 +28,7 @@
     "@stylistic/eslint-plugin": "^1.4.1",
     "@typescript-eslint/eslint-plugin": "^6.12.0",
     "eslint": "^8.54.0",
-    "eslint-config-prettier": "^9.0.0",
+    "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-modules-newline": "^0.0.6",
     "eslint-plugin-modules-newlines": "^0.0.7",
     "eslint-plugin-perfectionist": "^2.4.2",
