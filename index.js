@@ -183,6 +183,7 @@ module.exports = {
     '@stylistic/brace-style': 'off',
     '@stylistic/function-call-argument-newline': ['error', 'consistent'],
     '@stylistic/indent': 'off',
+    '@stylistic/indent-binary-ops': 'off',
     '@stylistic/lines-between-class-members': ['error'],
     '@stylistic/quote-props': ['error', 'as-needed'],
 
