@@ -68,6 +68,10 @@ module.exports = {
         selector: 'typeLike',
       },
       {
+        filter: {
+          match: false,
+          regex: '^(Window)$',
+        },
         format: ['StrictPascalCase'],
         prefix: ['I'],
         selector: ['interface', 'typeAlias'],
@@ -103,6 +107,14 @@ module.exports = {
         format: ['UPPER_CASE', 'camelCase', 'StrictPascalCase'],
         selector: 'objectLiteralProperty',
       },
+      // {
+      //   filter: {
+      //     match: true,
+      //     regex: 'ENV$',
+      //   },
+      //   format: ['UPPER_CASE'],
+      //   selector: ['property', 'typeLike'],
+      // },
     ],
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-unused-vars': 'off',
