@@ -167,25 +167,31 @@ module.exports = {
     'unicorn/no-array-reduce': 'off',
     'unicorn/no-null': 'off',
     'unicorn/prefer-module': 'off',
-    'unicorn/prevent-abbreviations': [
-      'error',
-      {
-        allowList: {
-          args: true,
-          props: true,
-        },
-        checkFilenames: true,
-        checkProperties: true,
-        checkVariables: true,
-      },
-    ],
+    // 'unicorn/prevent-abbreviations': [
+    //   'error',
+    //   {
+    //     allowList: {
+    //       args: true,
+    //       attr: true,
+    //       attrs: true,
+    //       props: true,
+    //     },
+    //     checkFilenames: true,
+    //     checkProperties: true,
+    //     checkVariables: true,
+    //   },
+    // ],
+    'unicorn/prevent-abbreviations': 'off',
 
     '@stylistic/brace-style': 'off',
+    '@stylistic/comma-dangle': 'off',
     '@stylistic/function-call-argument-newline': ['error', 'consistent'],
     '@stylistic/indent': 'off',
     '@stylistic/indent-binary-ops': 'off',
     '@stylistic/lines-between-class-members': ['error'],
     '@stylistic/quote-props': ['error', 'as-needed'],
+
+    'unicorn/no-for-loop': 'off',
 
     'prettier/prettier': [
       'error',
