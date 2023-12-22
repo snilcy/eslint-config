@@ -10,7 +10,13 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['@stylistic', 'modules-newlines', 'perfectionist', 'unicorn'],
+  plugins: [
+    '@stylistic',
+    'modules-newlines',
+    'perfectionist',
+    'unicorn',
+    'only-warn',
+  ],
   rules: {
     '@stylistic/array-bracket-newline': ['off', 'consistent'],
     '@stylistic/array-element-newline': [
@@ -165,8 +171,10 @@ module.exports = {
 
     'unicorn/import-style': 'off',
     'unicorn/no-array-reduce': 'off',
+    'unicorn/no-for-loop': 'off',
     'unicorn/no-null': 'off',
     'unicorn/prefer-module': 'off',
+    'unicorn/prevent-abbreviations': 'off',
     // 'unicorn/prevent-abbreviations': [
     //   'error',
     //   {
@@ -181,7 +189,6 @@ module.exports = {
     //     checkVariables: true,
     //   },
     // ],
-    'unicorn/prevent-abbreviations': 'off',
 
     '@stylistic/brace-style': 'off',
     '@stylistic/comma-dangle': 'off',
@@ -191,10 +198,8 @@ module.exports = {
     '@stylistic/lines-between-class-members': ['error'],
     '@stylistic/quote-props': ['error', 'as-needed'],
 
-    'unicorn/no-for-loop': 'off',
-
     'prettier/prettier': [
-      'error',
+      'warn',
       {
         parser: 'flow',
         semi: false,

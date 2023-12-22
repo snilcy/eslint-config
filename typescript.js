@@ -126,9 +126,8 @@ module.exports = {
     'no-use-before-define': 'warn',
 
     'prettier/prettier': [
-      'error',
+      'warn',
       {
-        parser: 'flow',
         parser: 'typescript',
         semi: false,
         singleQuote: true,
