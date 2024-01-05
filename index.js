@@ -196,12 +196,13 @@ module.exports = {
     '@stylistic/indent': 'off',
     '@stylistic/indent-binary-ops': 'off',
     '@stylistic/lines-between-class-members': ['error'],
+    '@stylistic/member-delimiter-style': 'off',
     '@stylistic/quote-props': ['error', 'as-needed'],
 
     'prettier/prettier': [
       'warn',
       {
-        parser: 'flow',
+        // parser: 'flow',
         semi: false,
         singleQuote: true,
       },
