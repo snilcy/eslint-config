@@ -68,9 +68,13 @@ module.exports = {
         selector: 'typeLike',
       },
       {
+        // custom: {
+        //   match: false,
+        //   regex: '^$',
+        // },
         filter: {
           match: false,
-          regex: '^(Window)$',
+          regex: '^(Window|I[a-zA-Z]+DTO)$',
         },
         format: ['StrictPascalCase'],
         prefix: ['I'],
