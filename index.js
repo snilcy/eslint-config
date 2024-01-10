@@ -88,26 +88,27 @@ module.exports = {
 
     'no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
 
-    'perfectionist/sort-classes': [
-      'error',
-      {
-        groups: [
-          'index-signature',
-          'private-property',
-          'property',
-          'constructor',
-          ['get-method', 'set-method'],
-          'static-method',
-          'private-method',
-          'method',
-          'unknown',
-          'static-private-method',
-          'static-property',
-        ],
-        order: 'asc',
-        type: 'alphabetical',
-      },
-    ],
+    'perfectionist/sort-classes': 'off',
+    // 'perfectionist/sort-classes': [
+    //   'error',
+    //   {
+    //     groups: [
+    //       'index-signature',
+    //       'private-property',
+    //       'property',
+    //       'constructor',
+    //       ['get-method', 'set-method'],
+    //       'static-method',
+    //       'private-method',
+    //       'method',
+    //       'unknown',
+    //       'static-private-method',
+    //       'static-property',
+    //     ],
+    //     order: 'asc',
+    //     type: 'natural',
+    //   },
+    // ],
 
     'perfectionist/sort-interfaces': [
       'warn',
