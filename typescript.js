@@ -108,6 +108,12 @@ module.exports = {
         ],
       },
       {
+        format: ['camelCase'],
+        leadingUnderscore: 'allow',
+        modifiers: ['private'],
+        selector: 'memberLike',
+      },
+      {
         format: ['UPPER_CASE', 'camelCase', 'StrictPascalCase'],
         selector: 'objectLiteralProperty',
       },

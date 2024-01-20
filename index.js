@@ -47,6 +47,7 @@ module.exports = {
       },
     ],
     '@stylistic/no-multiple-empty-lines': ['warn', { max: 1 }],
+    '@stylistic/no-multiple-empty-lines': 'off',
     '@stylistic/object-curly-newline': [
       'off',
       {
