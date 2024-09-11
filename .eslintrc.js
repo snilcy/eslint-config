@@ -1,1 +1,0 @@
-/home/rocket/git/rocket/eslint-config/index.js
