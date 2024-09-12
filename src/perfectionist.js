@@ -52,37 +52,6 @@ export default {
         type: 'alphabetical',
       },
     ],
-    'perfectionist/sort-imports': [
-      'warn',
-      {
-        groups: [
-          'type',
-          'builtin',
-          'external',
-          'internal',
-          'index-type',
-          'parent',
-          'sibling',
-          'index',
-          'object',
-
-          'styles',
-          'side-effect-style',
-
-          'external-type',
-          'internal-type',
-          'external-type',
-          'parent-type',
-          'sibling-type',
-          'index-type',
-
-          'unknown',
-        ],
-        'internal-pattern': ['src/**'],
-        'newlines-between': 'always',
-        order: 'asc',
-        type: 'alphabetical',
-      },
-    ],
+    'perfectionist/sort-imports': 'off',
   },
 }
