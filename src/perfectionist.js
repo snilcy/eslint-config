@@ -5,6 +5,7 @@ export default {
     perfectionist,
   },
   rules: {
+    ...perfectionist.configs['recommended-natural'].rules,
     'perfectionist/sort-classes': 'off',
     // 'perfectionist/sort-classes': [
     //   'error',
@@ -31,7 +32,7 @@ export default {
       'warn',
       {
         order: 'asc',
-        'partition-by-new-line': true,
+        partitionByNewLine: true,
         type: 'alphabetical',
       },
     ],
@@ -40,7 +41,7 @@ export default {
       'warn',
       {
         order: 'asc',
-        'partition-by-new-line': true,
+        partitionByNewLine: true,
         type: 'alphabetical',
       },
     ],
@@ -52,6 +53,32 @@ export default {
         type: 'alphabetical',
       },
     ],
-    'perfectionist/sort-imports': 'off',
+
+    'perfectionist/sort-imports': [
+      'error',
+      {
+        groups: [
+          'builtin',
+          'external',
+          'internal',
+          ['parent', 'sibling', 'index'],
+          'object',
+          [
+            'builtin-type',
+            'external-type',
+            'internal-type',
+            'parent-type',
+            'sibling-type',
+            'index-type',
+            'type',
+          ],
+          'unknown',
+        ],
+        internalPattern: ['@/**'],
+        newlinesBetween: 'always',
+        order: 'asc',
+        type: 'alphabetical',
+      },
+    ],
   },
 }

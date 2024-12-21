@@ -1,11 +1,18 @@
+import prettierRecommended from 'eslint-plugin-prettier/recommended'
+
 export default {
+  plugins: {
+    ...prettierRecommended.plugins
+  },
   rules: {
-  "prettier/prettier": [
-    "warn",
-    {
-      semi: false,
-      singleQuote: true,
-    },
-  ],
+    ...prettierRecommended.rules,
+
+    "prettier/prettier": [
+      "warn",
+      {
+        semi: false,
+        singleQuote: true,
+      },
+    ],
   }
 };
