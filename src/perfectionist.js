@@ -74,7 +74,7 @@ export default {
           ],
           'unknown',
         ],
-        internalPattern: ['@/**'],
+        internalPattern: ['^~/.*'],
         newlinesBetween: 'always',
         order: 'asc',
         type: 'alphabetical',
