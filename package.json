@@ -3,6 +3,7 @@
   "version": "2.7.0",
   "description": "ESLint shareable config",
   "keywords": [],
+  "main": "./eslint.config.js",
   "exports": "./eslint.config.js",
   "type": "module",
   "scripts": {
