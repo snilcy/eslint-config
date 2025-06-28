@@ -17,5 +17,5 @@ export default [
   ...typescript,
   rules,
   typescriptRules,
-  hooks,
+  ...hooks,
 ]
