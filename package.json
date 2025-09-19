@@ -29,7 +29,9 @@
     "eslint-plugin-unicorn": "55.0.0",
     "prettier": "3.5.1",
     "typescript-eslint": "8.24.1",
+    "prettier-plugin-astro": "^0.14.1",
     "eslint-plugin-react-hooks": "^5.2.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {}
 }
