@@ -1,5 +1,7 @@
 import 'eslint-plugin-only-warn'
+import { defineConfig } from 'eslint/config'
 
+import astro from './src/astro.js'
 import hooks from './src/hooks.js'
 import modulesNewlines from './src/modules-newlines.js'
 import perfectionistConfig from './src/perfectionist.js'
@@ -9,13 +11,14 @@ import stylistic from './src/stylistic.js'
 import typescript from './src/typescript/index.js'
 import typescriptRules from './src/typescript/rules.js'
 
-export default [
+export default defineConfig(
   stylistic,
+  typescript,
   prettier,
+  astro,
   perfectionistConfig,
   modulesNewlines,
-  ...typescript,
   rules,
   typescriptRules,
-  ...hooks,
-]
+  hooks,
+)
