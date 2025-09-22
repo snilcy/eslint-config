@@ -1,5 +1,5 @@
 export default {
-  files: ['**/*.{ts,tsx}'],
+  // files: ['**/*.{ts,tsx}'],
   rules: {
     '@stylistic/type-annotation-spacing': [
       'warn',
@@ -71,7 +71,7 @@ export default {
         // },
         filter: {
           match: false,
-          regex: '^(Window|I[a-zA-Z]+DTO)$',
+          regex: '^(Window|I[a-zA-Z]+DTO|Props)$',
         },
         format: ['StrictPascalCase'],
         prefix: ['I'],
