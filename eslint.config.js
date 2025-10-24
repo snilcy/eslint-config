@@ -13,7 +13,7 @@ import typescriptRules from './src/typescript/rules.js'
 import vite from './src/vite.js'
 
 export default defineConfig(
-  globalIgnores(['dist', 'build/**/*']),
+  globalIgnores(['**/dist/', '**/build/', '*.gen.ts']),
   stylistic,
   typescript,
   prettier,

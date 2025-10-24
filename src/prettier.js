@@ -1,5 +1,5 @@
 import prettierRecommended from 'eslint-plugin-prettier/recommended'
-import { defineConfig } from 'eslint/config'
+import { defineConfig, globalIgnores } from 'eslint/config'
 
 export const prettierParams = {
   semi: false,
