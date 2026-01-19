@@ -4,6 +4,7 @@ import { defineConfig, globalIgnores } from 'eslint/config'
 export const prettierParams = {
   semi: false,
   singleQuote: true,
+  printWidth: 120
 }
 
 export default defineConfig([
