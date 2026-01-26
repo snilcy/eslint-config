@@ -61,10 +61,7 @@ export default {
         },
       },
     ],
-    '@stylistic/object-property-newline': [
-      'off',
-      { allowAllPropertiesOnSameLine: false },
-    ],
+    '@stylistic/object-property-newline': ['off', { allowAllPropertiesOnSameLine: false }],
     '@stylistic/operator-linebreak': 'off',
     '@stylistic/quotes': [
       'off',
@@ -80,7 +77,16 @@ export default {
     '@stylistic/function-call-argument-newline': ['error', 'consistent'],
     '@stylistic/indent': 'off',
     '@stylistic/indent-binary-ops': 'off',
-    '@stylistic/lines-between-class-members': ['error'],
+    '@stylistic/lines-between-class-members': [
+      'error',
+      {
+        enforce: [
+          { blankLine: 'always', next: 'field', prev: 'field' },
+          { blankLine: 'always', next: '*', prev: 'method' },
+          { blankLine: 'always', next: 'method', prev: '*' },
+        ],
+      },
+    ],
     '@stylistic/member-delimiter-style': 'off',
     '@stylistic/quote-props': ['error', 'as-needed'],
   },
