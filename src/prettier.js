@@ -2,7 +2,7 @@ import prettierRecommended from 'eslint-plugin-prettier/recommended'
 import { defineConfig, globalIgnores } from 'eslint/config'
 
 export const prettierParams = {
-  printWidth: 120,
+  printWidth: 160,
   semi: false,
   singleQuote: true,
 }
