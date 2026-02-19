@@ -2,7 +2,6 @@ import eslint from '@eslint/js'
 import tseslint from 'typescript-eslint'
 
 export default tseslint.config({
-  files: ['**/*.{ts,tsx}'],
   // files: ['**/*.ts'],
   extends: [
     eslint.configs.recommended,
@@ -11,6 +10,7 @@ export default tseslint.config({
     ...tseslint.configs.recommended,
     ...tseslint.configs.stylistic,
   ],
+  files: ['**/*.{ts,tsx}'],
   // extends: [
   //   'plugin:@typescript-eslint/recommended',
   //   'plugin:@typescript-eslint/stylistic',

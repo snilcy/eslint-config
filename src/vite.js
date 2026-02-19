@@ -1,5 +1,3 @@
 import reactRefresh from 'eslint-plugin-react-refresh'
 
-export default [
-  reactRefresh.configs.vite,
-]
+export default [reactRefresh.configs.vite]

@@ -93,16 +93,7 @@ export default {
       {
         format: null,
         modifiers: ['requiresQuotes'],
-        selector: [
-          'classProperty',
-          'objectLiteralProperty',
-          'typeProperty',
-          'classMethod',
-          'objectLiteralMethod',
-          'typeMethod',
-          'accessor',
-          'enumMember',
-        ],
+        selector: ['classProperty', 'objectLiteralProperty', 'typeProperty', 'classMethod', 'objectLiteralMethod', 'typeMethod', 'accessor', 'enumMember'],
       },
       {
         format: ['camelCase'],

@@ -1,9 +1,10 @@
-import { defineConfig } from 'eslint/config'
 import eslint from '@eslint/js'
-import prettier from 'eslint-plugin-prettier'
 import eslintConfigPrettier from 'eslint-config-prettier'
+import prettier from 'eslint-plugin-prettier'
 import globalsModule from 'globals'
-const { browser, node, es2021 } = globalsModule
+
+import { defineConfig } from 'eslint/config'
+const { browser, es2021, node } = globalsModule
 import typescriptPlugin from '@typescript-eslint/eslint-plugin'
 import tsParser from '@typescript-eslint/parser'
 import astroParser from 'astro-eslint-parser'
@@ -16,23 +17,8 @@ export default defineConfig([
   eslintPluginAstro.configs.recommended,
   {
     files: ['**/*.astro'],
-    // ...eslint.configs.recommended,
-    plugins: {
-      '@typescript-eslint': typescriptPlugin,
-    },
     languageOptions: {
       ecmaVersion: 'latest',
-      sourceType: 'module',
-      parser: astroParser,
-      parserOptions: {
-        parser: tsParser,
-        extraFileExtensions: ['.astro'],
-        project: './tsconfig.json',
-        sourceType: 'module',
-        ecmaFeatures: {
-          jsx: true,
-        },
-      },
       globals: {
         ...browser,
         ...node,
@@ -41,6 +27,21 @@ export default defineConfig([
         Astro: 'readonly',
         Fragment: 'readonly',
       },
+      parser: astroParser,
+      parserOptions: {
+        ecmaFeatures: {
+          jsx: true,
+        },
+        extraFileExtensions: ['.astro'],
+        parser: tsParser,
+        project: './tsconfig.json',
+        sourceType: 'module',
+      },
+      sourceType: 'module',
+    },
+    // ...eslint.configs.recommended,
+    plugins: {
+      '@typescript-eslint': typescriptPlugin,
     },
     rules: {
       // Import rules
@@ -50,8 +51,8 @@ export default defineConfig([
       'prettier/prettier': [
         'error',
         {
-          plugins: ['prettier-plugin-astro'],
           parser: 'astro',
+          plugins: ['prettier-plugin-astro'],
           ...prettierParams,
           // singleQuote: true,
           // tabWidth: 2,

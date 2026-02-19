@@ -1,9 +1,5 @@
 module.exports = {
-  extends: [
-    'plugin:@typescript-eslint/recommended',
-    'plugin:@typescript-eslint/stylistic',
-    './index.js',
-  ],
+  extends: ['plugin:@typescript-eslint/recommended', 'plugin:@typescript-eslint/stylistic', './index.js'],
   parser: '@typescript-eslint/parser',
   plugins: [
     '@typescript-eslint',
@@ -96,16 +92,7 @@ module.exports = {
       {
         format: null,
         modifiers: ['requiresQuotes'],
-        selector: [
-          'classProperty',
-          'objectLiteralProperty',
-          'typeProperty',
-          'classMethod',
-          'objectLiteralMethod',
-          'typeMethod',
-          'accessor',
-          'enumMember',
-        ],
+        selector: ['classProperty', 'objectLiteralProperty', 'typeProperty', 'classMethod', 'objectLiteralMethod', 'typeMethod', 'accessor', 'enumMember'],
       },
       {
         format: ['camelCase'],
