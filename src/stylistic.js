@@ -82,6 +82,8 @@ export default {
       {
         enforce: [
           { blankLine: 'never', next: 'field', prev: 'field' },
+          { blankLine: 'always', next: 'method', prev: 'field' },
+          { blankLine: 'always', next: 'field', prev: 'method' },
           { blankLine: 'always', next: '*', prev: 'method' },
           { blankLine: 'always', next: 'method', prev: '*' },
         ],

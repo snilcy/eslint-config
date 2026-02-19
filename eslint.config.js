@@ -1,4 +1,3 @@
-import 'eslint-plugin-only-warn'
 import { defineConfig, globalIgnores } from 'eslint/config'
 
 import astro from './src/astro.js'
@@ -12,6 +11,8 @@ import typescript from './src/typescript/index.js'
 import typescriptRules from './src/typescript/rules.js'
 import vite from './src/vite.js'
 
+import 'eslint-plugin-only-warn'
+
 export default defineConfig(
   globalIgnores(['**/dist/', '**/build/', '*.gen.ts']),
   stylistic,
@@ -19,9 +20,9 @@ export default defineConfig(
   prettier,
   // astro,
   perfectionistConfig,
-  // modulesNewlines,
-  // rules,
-  // typescriptRules,
-  // hooks,
-  // vite,
+  modulesNewlines,
+  rules,
+  typescriptRules,
+  hooks,
+  vite,
 )
