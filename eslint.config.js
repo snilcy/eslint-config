@@ -1,6 +1,8 @@
 import { defineConfig, globalIgnores } from 'eslint/config'
 
-import astro from './src/astro.js'
+// import globals from "globals";
+// import js from "@eslint/js";
+// import astro from './src/astro.js'
 import hooks from './src/hooks.js'
 import modulesNewlines from './src/modules-newlines.js'
 import perfectionistConfig from './src/perfectionist.js'
@@ -14,6 +16,9 @@ import vite from './src/vite.js'
 import 'eslint-plugin-only-warn'
 
 export default defineConfig(
+  // { files: ["**/*.js"], languageOptions: { globals: globals.browser } },
+  // { files: ["**/*.js"], plugins: { js }, extends: ["js/recommended"] },
+
   globalIgnores(['**/dist/', '**/build/', '*.gen.ts']),
   stylistic,
   typescript,

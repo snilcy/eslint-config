@@ -6,12 +6,20 @@ export default {
       {
         after: true,
         before: false,
-        overrides: {
-          arrow: {
-            after: true,
-            before: true,
-          },
-        },
+        // overrides: {
+        //   arrow: {
+        //     after: true,
+        //     before: true,
+        //   },
+        // },
+      },
+    ],
+
+    '@stylistic/arrow-spacing': [
+      'warn',
+      {
+        after: true,
+        before: true,
       },
     ],
 
@@ -93,7 +101,16 @@ export default {
       {
         format: null,
         modifiers: ['requiresQuotes'],
-        selector: ['classProperty', 'objectLiteralProperty', 'typeProperty', 'classMethod', 'objectLiteralMethod', 'typeMethod', 'accessor', 'enumMember'],
+        selector: [
+          'classProperty',
+          'objectLiteralProperty',
+          'typeProperty',
+          'classMethod',
+          'objectLiteralMethod',
+          'typeMethod',
+          'accessor',
+          'enumMember',
+        ],
       },
       {
         format: ['camelCase'],
