@@ -21,12 +21,12 @@ export default defineConfig(
 
   globalIgnores(['**/dist/', '**/build/', '*.gen.ts']),
   stylistic,
-  typescript,
   prettier,
   // astro,
   perfectionistConfig,
   modulesNewlines,
   rules,
+  typescript,
   typescriptRules,
   hooks,
   vite,

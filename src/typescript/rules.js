@@ -1,6 +1,13 @@
 export default {
   // files: ['**/*.{ts,tsx}'],
   rules: {
+    '@stylistic/arrow-spacing': [
+      'warn',
+      {
+        after: true,
+        before: true,
+      },
+    ],
     '@stylistic/type-annotation-spacing': [
       'warn',
       {
@@ -13,14 +20,6 @@ export default {
             before: true,
           },
         },
-      },
-    ],
-
-    '@stylistic/arrow-spacing': [
-      'warn',
-      {
-        after: true,
-        before: true,
       },
     ],
 
@@ -101,6 +100,7 @@ export default {
       },
       {
         format: null,
+        leadingUnderscore: 'allow',
         modifiers: ['requiresQuotes'],
         selector: [
           'classProperty',
