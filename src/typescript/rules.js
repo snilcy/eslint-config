@@ -5,13 +5,14 @@ export default {
       'warn',
       {
         after: true,
-        before: true,
-        // overrides: {
-        //   arrow: {
-        //     after: true,
-        //     before: true,
-        //   },
-        // },
+        before: false,
+
+        overrides: {
+          arrow: {
+            after: true,
+            before: true,
+          },
+        },
       },
     ],
 
