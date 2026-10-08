@@ -5,7 +5,7 @@ export default {
       'warn',
       {
         after: true,
-        before: false,
+        before: true,
         // overrides: {
         //   arrow: {
         //     after: true,
