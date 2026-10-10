@@ -36,6 +36,9 @@
   },
   "dependencies": {
     "@stylistic/stylelint-config": "^5.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.71.1",
+    "@typescript-eslint/parser": "^8.71.1",
+    "eslint-plugin-drizzle": "^0.2.3",
     "typescript": "npm:@typescript/typescript6@^6.0.2",
     "typescript-eslint": "^8.71.1"
   },

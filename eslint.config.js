@@ -1,5 +1,6 @@
 import { defineConfig, globalIgnores } from 'eslint/config'
 
+import drizzle from './src/drizzle.js'
 // import globals from "globals";
 // import js from "@eslint/js";
 // import astro from './src/astro.js'
@@ -30,4 +31,5 @@ export default defineConfig(
   typescriptRules,
   hooks,
   vite,
+  drizzle,
 )
